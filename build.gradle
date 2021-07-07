@@ -21,21 +21,14 @@ apply plugin: 'io.spring.dependency-management'
 
 group 'com.heon9u'
 version '1.0-SNAPSHOT'
-
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
-
-test {
-    useJUnitPlatform()
-}
-
