@@ -4,6 +4,7 @@ import com.heon9u.springboot.config.auth.LoginUser;
 import com.heon9u.springboot.config.auth.dto.SessionUser;
 import com.heon9u.springboot.service.posts.PostsService;
 import com.heon9u.springboot.web.dto.PostsResponseDto;
+import jdk.internal.org.jline.utils.Log;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +26,7 @@ public class IndexController {
         model.addAttribute("posts", postsService.findAllDesc());
 
         if(user != null) {
-            model.addAttribute("userName", user.getName());
+            model.addAttribute("loginName", user.getName());
         }
 
         return "index";
