@@ -1,6 +1,8 @@
 # 📚스프링 부트와 AWS로 구현하는 웹 서비스
 
-![main](C:\Users\82103\Desktop\IntelliJ_Project\main.png)
+![main](https://user-images.githubusercontent.com/44271206/125600462-3f4c73ed-9b5b-44f5-9b88-9064e4a94efe.png)
+
+
 
 
 
