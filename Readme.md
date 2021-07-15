@@ -21,6 +21,7 @@ RESTful API 기반 Web Application
 - OAuth2.0
 - Mustache
 - Bootstrap
+- AWS EC2 (Amazon Linux AMI 2)
 
 
 
