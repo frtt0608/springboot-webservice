@@ -4,13 +4,11 @@ import com.heon9u.springboot.config.auth.LoginUser;
 import com.heon9u.springboot.config.auth.dto.SessionUser;
 import com.heon9u.springboot.service.posts.PostsService;
 import com.heon9u.springboot.web.dto.PostsResponseDto;
-import jdk.internal.org.jline.utils.Log;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
 
 import javax.servlet.http.HttpSession;
 
