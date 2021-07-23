@@ -11,6 +11,8 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
+script: "./gradlew clean build"
+
 before_install:
   - chmod +x ./gradlew
 
@@ -29,19 +31,6 @@ deploy:
     acl: private
     local_dir: deploy
     wait-until-deployed: true
-
-  - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: springboot-build-zip
-    key: springboot-webservice.zip
-    bundle_type: zip
-    application: springboot-aws-codedeploy
-    deployment_group: springboot-aws-codedeploy-group
-    region: ap-northeast-2
-    wait-until-deployed: true
-
-script: "./gradlew clean build"
 
 notifications:
   email:
