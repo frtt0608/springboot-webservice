@@ -23,8 +23,10 @@ RESTful API 기반 Web Application
 - Bootstrap
 - AWS EC2 (Amazon Linux AMI 2)
 - AWS RDS (MariaDB 10.2.21)
+- AWS S3
 - Putty
 - HeidiSQL
+- Travis CI
 
 
 
@@ -72,6 +74,13 @@ RESTful API 기반 Web Application
    - 외부 Security 연동과 RDS를 연동하는 과정에서 AWS의 database를 인식하지 못함
    - EC2 서버에 application-real-db.properties 오타 발견
    - [database명]과 [DB 인스턴스 명] 구분하기
+5. 프로젝트 변경사항을 커밋/푸쉬했을 때, EC2 서버에 반영되지 않는 상황(배포 자동화x)
+   - deployment-logs : 기존에 열려있는 PID를 죽이지 못하고, 새로 배포가 안되는 문제
+   - nohup.out : the port may already be in use or the connector may be misconfigured.
+   - 프로젝트의 deploy.sh에서 CURRENT_PID를 저장할 때, grep jar -> grep java로 변경하여 해결
+   - 해결은 했지만, 정확한 문제 원인은 모르겠음...
+
+
 
 
 
@@ -79,5 +88,4 @@ RESTful API 기반 Web Application
 
 ## ✅프로젝트 진행 예정
 
-- Travis CI 배포 자동화
 - NginX 무중단 배포
