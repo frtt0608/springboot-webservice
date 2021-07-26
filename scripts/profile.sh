@@ -1,7 +1,7 @@
 #!/usr/bin/evn bash
 
 function find_idle_profile() {
-  RESPONSE_CODE=$(curl -s -o /dev/null -w "#{http_code}" http://localhost/profile)
+  RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost/profile)
 
   if [ ${RESPONSE_CODE} -ge 400 ]
   then
