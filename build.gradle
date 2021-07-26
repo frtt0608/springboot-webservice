@@ -20,7 +20,7 @@ apply plugin: 'io.spring.dependency-management'
 
 
 group 'com.heon9u'
-version '1.0.1-SNAPSHOT'
+version '1.0.1-SNAPSHOT-' + new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = 1.8
 
 repositories {
