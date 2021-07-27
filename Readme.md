@@ -53,7 +53,12 @@ RESTful API 기반 Web Application
 
 - Posts의 CRUD
 - 로그인
-- 무중단 배포 인프라 구조
+
+
+
+## ✅무중단 배포 인프라 구조
+
+![image-20210727213709101](C:\Users\82103\Desktop\IntelliJ_Project\image-20210727213709101.png)
 
 
 
