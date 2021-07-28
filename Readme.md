@@ -51,7 +51,7 @@ RESTful API 기반 Web Application
 
 ## ✅무중단 배포 인프라 구조
 
-![infra구조](C:\Users\82103\Desktop\IntelliJ_Project\127263914-bc2fb44a-840b-491a-912e-c3260c3dcfd9.png)
+![infra structure](https://user-images.githubusercontent.com/44271206/127273241-c4e2db5a-e4c1-4ecb-9ba3-42e3bbe35295.png)
 
 
 
